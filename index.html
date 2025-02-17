@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7even Candles Co.</title>
+    <meta name="description" content="Luxury handmade candles crafted to elevate your space with premium scents and ambiance.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">7even Candles Co.</div>
+            <ul class="nav-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="subscribe.php" class="cta">Subscribe</a></li>
+                <li class="cart-icon"><a href="#" id="cart-toggle">🛒 Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="quiz-popup" class="quiz-popup">
+        <div class="quiz-content">
+            <span class="close-quiz">&times;</span>
+            <h2>Find Your Perfect Scent</h2>
+            <p>Answer a few questions to discover the best candle for you.</p>
+            <div id="quiz-questions">
+                <p>What mood do you want your candle to set?</p>
+                <button class="quiz-option" data-answer="relaxing">Relaxing</button>
+                <button class="quiz-option" data-answer="romantic">Romantic</button>
+                <button class="quiz-option" data-answer="energizing">Energizing</button>
+            </div>
+            <p id="quiz-result"></p>
+        </div>
+    </div>
+
+    <div id="cart-popup" class="cart-popup">
+        <button class="close-btn" id="cart-close">&times;</button>
+        <h2>Your Cart</h2>
+        <p>Your cart is empty.</p>
+    </div>
+
+    <section class="hero">
+        <h1>Luxury Handmade Candles</h1>
+        <p>Discover scents that elevate your space.</p>
+        <a href="#shop" class="btn">Shop Now</a>
+    </section>
+
+    <section id="shop" class="products">
+        <h2>Our Bestsellers</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="imgs/opulence.png" alt="Opulence Candle">
+                <h3>Opulence</h3>
+                <p>Rich, elegant, and long-lasting scent.</p>
+                <button class="add-to-cart" data-name="OpulenceCandle" data-price="52.00">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="imgs/serenity.png" alt="Serenity Candle">
+                <h3>Serenity</h3>
+                <p>Calm and soothing aroma for relaxation.</p>
+                <button class="add-to-cart" data-name="Serenity Candle" data-price="52.00">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="imgs/desire.png" alt="Desire Candle">
+                <h3>Desire</h3>
+                <p>Warm and sensual fragrance for a romantic ambiance.</p>
+                <button class="add-to-cart" data-name="Seduction Candle" data-price="52.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-popup" class="cart-popup">
+        <button class="close-btn" id="cart-close">&times;</button>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <h3>Total: $<span id="cart-total">0.00</span></h3>
+        <button class="btn checkout-btn">Checkout</button>
+    </div>
+
+    <section id="features" class="dynamic-features">
+        <h2>Experience Personalization</h2>
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>Exclusive Offers</h3>
+                <p>Get personalized discounts and promotions.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Customer Reviews</h3>
+                <p>See what others are saying about our candles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe" class="newsletter">
+        <h2>Join Our Candle Club</h2>
+        <p>Get exclusive discounts and early access to new scents.</p>
+        <form action="subscribe.php" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section id="privacy-policy" class="privacy">
+        <h2>Privacy Policy</h2>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 7even Candles Co. All Rights Reserved.</p>
+    
+    </footer>
+</body>
+</html>

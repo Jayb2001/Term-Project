@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - 7even Candles Co.</title>
+    <meta name="description" content="Browse and purchase luxury handmade candles.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">7even Candles Co.</a></div>
+            <ul class="nav-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#subscribe" class="cta">Subscribe</a></li>
+                <li class="cart-icon"><a href="#" id="cart-toggle">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="shop">
+        <h2>Shop Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="imgs/opulence.png" alt="Opulence Candle">
+                <h3>Opulence</h3>
+                <p>Rich, elegant, and long-lasting scent.</p>
+                <button class="add-to-cart" data-name="Opulence Candle" data-price="52.00">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="imgs/serenity.png" alt="Serenity Candle">
+                <h3>Serenity</h3>
+                <p>Calm and soothing aroma for relaxation.</p>
+                <button class="add-to-cart" data-name="Serenity Candle" data-price="52.00">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="imgs/desire.png" alt="Desire Candle">
+                <h3>Desire</h3>
+                <p>Warm and sensual fragrance for a romantic ambiance.</p>
+                <button class="add-to-cart" data-name="Seduction Candle" data-price="52.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Popup (Fixed) -->
+    <div id="cart-popup" class="cart-popup">
+        <button class="close-btn" id="cart-close">&times;</button>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <h3>Total: $<span id="cart-total">0.00</span></h3>
+        <button class="btn checkout-btn">Checkout</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 7even Candles Co. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
